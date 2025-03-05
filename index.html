@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Quince Años - Giulana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Giulana XV</a>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#invitation">Invitación</a></li>
+                        <li><a href="#details">Detalles</a></li>
+                        <li><a href="#gallery">Galería</a></li>
+                        <li><a href="#gifts">Regalos</a></li>
+                        <li><a href="#rsvp">RSVP</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#invitation" class="mobile-link">Invitación</a></li>
+                <li><a href="#details" class="mobile-link">Detalles</a></li>
+                <li><a href="#gallery" class="mobile-link">Galería</a></li>
+                <li><a href="#gifts" class="mobile-link">Regalos</a></li>
+                <li><a href="#rsvp" class="mobile-link">RSVP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Mis Quince Años</h1>
+            <h2>Giulana</h2>
+            <p class="quote">"Con gran alegría te invito a celebrar conmigo este día tan especial"</p>
+            
+            <div class="countdown-container">
+                <h3>Cuenta Regresiva</h3>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="days">00</div>
+                        <span>Días</span>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="hours">00</div>
+                        <span>Horas</span>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="minutes">00</div>
+                        <span>Minutos</span>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="seconds">00</div>
+                        <span>Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="invitation" class="invitation">
+        <div class="container">
+            <h2 class="section-title">La Invitación</h2>
+            <div class="invitation-card">
+                <p>Te invito a compartir conmigo y mi familia la celebración de mis quince años</p>
+                
+                <div class="event-info">
+                    <div class="event-item">
+                        <h3>Recepción</h3>
+                        <p>Salón XXXXXXXX</p>
+                        <p>20 de Junio de 2025</p>
+                        <p>20:00 hrs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="details">
+        <div class="container">
+            <h2 class="section-title">Detalles del Evento</h2>
+            
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Ubicación</h3>
+                        <p>Salón de Eventos "El Jardín", Av. Principal 123, Ciudad</p>
+                        <a href="https://maps.app.goo.gl/SU9W1s1GCSPYWu2J7" target="_blank" class="map-link">
+                            <i class="fas fa-map"></i> Cómo llegar
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Horario</h3>
+                        <p>Recepción: 20:00 hrs</p>
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Música y Baile</h3>
+                        <p>Disfruta de nuestra selección musical y baile sorpresa</p>
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dress-code">
+                <h3>Código de Vestimenta</h3>
+                <p>Formal - Elegante</p>
+                <div class="dress-tags">
+                    <span>Mujeres: Vestido de cóctel</span>
+                    <span>Hombres: Traje o saco y corbata</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="gifts" class="gifts">
+        <div class="container">
+            <h2 class="section-title">¿Querés regalarme algo? - Estas son las opciones</h2>
+            <div class="gifts-content">
+                <div class="gift-options">
+                    <div class="gift-card">
+                        <div class="icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3>Transferencia Bancaria</h3>
+                        <p>Banco: [Nombre del Banco]</p>
+                        <p>Titular: [Nombre del Titular]</p>
+                        <p>Cuenta: [Número de Cuenta]</p>
+                        <p>CLABE: [CLABE Interbancaria]</p>
+                    </div>
+                    
+                    <div class="gift-card">
+                        <div class="icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h3>Pago Digital</h3>
+                        <a href="#" class="payment-link">
+                            <i class="fas fa-link"></i> Enlace de Pago
+                        </a>
+                    </div>
+                </div>
+                <div class="gift-message">
+                    <p>Lo que más valoro es que compartas este día especial conmigo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+        <div class="container">
+            <h2 class="section-title">Confirma tu Asistencia</h2>
+            <p class="rsvp-info">Por favor confirma tu asistencia antes del XX de XXXXXX de 2025</p>
+            
+            <div class="form-container">
+                <form id="rsvpForm">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>¿Venis a la fiesta?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="yes" name="attendance" value="yes" checked>
+                                <label for="yes">Sí, asistiré</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="no" name="attendance" value="no">
+                                <label for="no">No podré asistir</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" id="guestsGroup">
+                        <label for="guests">Número de invitados (incluyéndote)</label>
+                        <input type="number" id="guests" name="guests" min="1" max="5" value="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Si querés dejarme un mensaje, podés hacerlo acá:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Confirmar Asistencia</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Giulana</h2>
+                <p>Mis Quince Años</p>
+                <div class="heart-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+            </div>
+            
+            <div class="footer-info">
+                <p>20 de Junio de 2025 | Salón de Eventos "El Jardín"</p>
+                <p>Con amor, Giulana.</p>
+                <p class="copyright">© <span id="currentYear"></span> - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <div class="toast-title">¡Confirmación recibida!</div>
+            <div class="toast-message">Gracias por confirmar tu asistencia.</div>
+        </div>
+        <button class="toast-close" id="toastClose">&times;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
