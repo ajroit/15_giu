@@ -96,7 +96,12 @@ toastClose.addEventListener('click', () => {
 document.getElementById('currentYear').innerText = new Date().getFullYear();
 
 // Añadir al final de script.js
-
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.header');
+    const hero = document.querySelector('.hero');
+    const headerHeight = header.offsetHeight; // Obtiene la altura del header
+    hero.style.paddingTop = `${headerHeight + 20}px`; // Añade un poco de margen extra
+});
 // Animación de desplazamiento de secciones
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.hero, .invitation, .details, .gallery, .rsvp');

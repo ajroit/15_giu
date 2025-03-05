@@ -142,8 +142,9 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 200px 20px 0 20px; /* Aumentamos el padding-top para más separación */
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .hero::before {
@@ -158,6 +159,16 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     opacity: 0.5;
     z-index: -1;
+}
+
+.hero-image {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 250px auto 20px auto; /* Aumentamos el margin-top */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero-content {
@@ -607,6 +618,89 @@ input:focus, textarea:focus {
     margin-left: 0.5rem;
 }
 
+/* Sección de Regalos */
+.gifts {
+    padding: 5rem 0;
+    background-color: var(--pink-50);
+}
+
+.gifts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.gift-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.gift-card:hover {
+    transform: scale(1.05);
+}
+
+.gift-card .icon {
+    font-size: 3rem;
+    color: var(--pink-600);
+    margin-bottom: 1rem;
+}
+
+.gift-card h3 {
+    font-size: 1.5rem;
+    color: var(--pink-800);
+    margin-bottom: 1rem;
+}
+
+.gift-card p {
+    margin-bottom: 0.5rem;
+    color: var(--pink-700);
+}
+
+.payment-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--pink-600);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.payment-link:hover {
+    background-color: var(--pink-700);
+}
+
+.gift-message {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gift-message p {
+    color: var(--pink-700);
+    font-style: italic;
+}
+
 /* Media queries */
 @media (min-width: 768px) {
     .event-info {
@@ -629,6 +723,10 @@ input:focus, textarea:focus {
     .form-row .form-group {
         width: 50%;
     }
+    
+    .gift-options {
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -646,6 +744,15 @@ input:focus, textarea:focus {
         display: block;
     }
     
+    .hero {
+        padding: 90px 20px 0 20px; /* Aumentamos el padding-top para móviles */
+    }
+    
+    .hero-image {
+        width: 200px;
+        margin: 0 auto 15px auto;
+    }
+    
     .hero h1 {
         font-size: 3rem;
     }
@@ -659,9 +766,11 @@ input:focus, textarea:focus {
         height: 3rem;
         font-size: 1.25rem;
     }
+    
+    .gift-options {
+        flex-direction: column;
+    }
 }
-
-/* Añadir al final de styles.css */
 
 /* Animaciones personalizadas */
 @keyframes fadeIn {
@@ -772,93 +881,4 @@ input:focus, textarea:focus {
 .countdown-value:hover {
     transform: scale(1.1);
     background-color: var(--pink-200);
-}
-
-/* Sección de Regalos */
-.gifts {
-    padding: 5rem 0;
-    background-color: var(--pink-50);
-}
-
-.gifts-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gift-options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    width: 100%;
-}
-
-.gift-card {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    transition: transform 0.3s ease;
-}
-
-.gift-card:hover {
-    transform: scale(1.05);
-}
-
-.gift-card .icon {
-    font-size: 3rem;
-    color: var(--pink-600);
-    margin-bottom: 1rem;
-}
-
-.gift-card h3 {
-    font-size: 1.5rem;
-    color: var(--pink-800);
-    margin-bottom: 1rem;
-}
-
-.gift-card p {
-    margin-bottom: 0.5rem;
-    color: var(--pink-700);
-}
-
-.payment-link {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: var(--pink-600);
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 0.25rem;
-    transition: background-color 0.3s ease;
-}
-
-.payment-link:hover {
-    background-color: var(--pink-700);
-}
-
-.gift-message {
-    background-color: var(--white);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.gift-message p {
-    color: var(--pink-700);
-    font-style: italic;
-}
-
-@media (max-width: 768px) {
-    .gift-options {
-        flex-direction: column;
-    }
 }
